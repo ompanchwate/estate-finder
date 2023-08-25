@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
      domain= {import.meta.env.VITE_AUTH_DOMAIN}
      clientId= {import.meta.env.VITE_AUTH_CLIENT_ID}
      authorizationParams={{
-      redirect_uri: "http://localhost:5173"
+      redirect_uri: "https://estate-finder-server.vercel.app/"
      }}
      audience="http://localhost:8000"
      scope="openid profile email"
