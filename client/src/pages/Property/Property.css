@@ -1,22 +1,21 @@
 .property-container{
-    gap:2rem;
+    gap: 2rem;
     position: relative;
 }
 
 .property-container .like{
     position: absolute;
-    top: 3rem;
-    right: 3rem;
+    top: 3rem;right: 3rem;
     cursor: pointer;
 }
 
 
 .property-container>img{
-     align-self: center;
-     max-height: 35rem;
-     border-radius: 1rem;
-     object-fit: cover;
-     width: 100%;
+    align-self: center;
+    max-height: 35rem;
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
 }
 
 .property-details{
@@ -25,9 +24,8 @@
     justify-content: space-between;
 }
 
-
 .property-details>div{
-    flex:1rem;
+    flex: 1;
     gap: 1.5rem;
 }
 
@@ -50,7 +48,24 @@
     width: 100%;
     margin-top: 1rem;
 }
+
 .property-details .button:hover{
     transform: scale(1.05);
-    margin-top: 1rem;
+}
+
+
+@media (max-width: 700px) {
+    .property-container>div{
+        flex-direction: column;
+    }
+    .head{
+        flex-direction: column;
+    }
+    .facilities{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .property-details>div{
+        width: 100%;
+    }
 }

@@ -7,13 +7,13 @@ import { AiFillHeart, AiTwotoneCar } from 'react-icons/ai'
 import { FaShower } from 'react-icons/fa'
 import { MdMeetingRoom, MdLocationPin } from 'react-icons/md'
 import './Property.css'
-import Map from '../../components/Map/map'
 import { useAuth0 } from "@auth0/auth0-react";
 import useAuthCheck from "../../hooks/useAuthCheck"
 import BookingModal from '../../components/BookingModal/BookingModal'
 import UserDetailContext from '../../context/UserDetailContext'
 import { Button } from '@mantine/core'
 import Heart from '../../components/Heart/heart'
+import Map from '../../components/Map/Map'
 
 const Property = () => {
   // pathname : /properties/6460802e05fa5b3fd0527f65   

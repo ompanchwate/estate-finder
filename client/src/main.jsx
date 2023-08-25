@@ -7,8 +7,8 @@ import { Auth0Provider } from "@auth0/auth0-react";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Auth0Provider
-     domain="dev-pl67l7mkcuwfs85a.us.auth0.com"
-     clientId="JTLD6pN2bEhMeKS7aST4Dvt3ove0CSnn"
+     domain= {import.meta.env.VITE_AUTH_DOMAIN}
+     clientId= {import.meta.env.VITE_AUTH_CLIENT_ID}
      authorizationParams={{
       redirect_uri: "http://localhost:5173"
      }}

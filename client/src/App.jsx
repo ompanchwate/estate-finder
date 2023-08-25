@@ -4,13 +4,16 @@ import Website from "./pages/website";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import React from "react";
-import Properties from "./pages/Properties/properties";
+
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from "react-query/devtools"
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"
 import Property from "./pages/Property/Property";
 import UserDetailContext from "./context/UserDetailContext";
+import Bookings from "./pages/Bookings/Bookings";
+import Favourites from "./pages/Favourites/Favourites";
+import Properties from "./pages/Properties/Properties";
 
 function App() {
   const queryClient = new QueryClient();
@@ -43,6 +46,8 @@ function App() {
                   <Route index element={<Properties />} />   {/* index : default path */}
                   <Route path=":propertyId" element={<Property />} />
                 </Route>
+                <Route path="/bookings" element={<Bookings/>}></Route>
+                <Route path="/favourites" element={<Favourites/>}></Route>
               </Route>
             </Routes>
           </Suspense>

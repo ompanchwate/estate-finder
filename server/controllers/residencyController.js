@@ -44,6 +44,7 @@ export const getResidency = asyncHandler(async(req, res)=>{
 
         res.send(residency);
     }catch(err){
+        console.log(err)
         throw new Error(err.message)
     }
 });
